@@ -12,21 +12,11 @@ public class A1 {
         
         String phrase = scan.nextLine();
         int correctNumber = 3;
-        
-        
-        if(phrase.toLowerCase().equals("three")){
+                
+        if(phrase.toLowerCase().equals("three") || phrase.equals("3")){
         	System.out.println("There are indeed " + phrase+" laws of predition");
         }else{
-        	
-        		if(Integer.parseInt(phrase)==correctNumber){
-        			System.out.println("There are indeed " + phrase+" laws of predition");
-        		}
-        		else{
-        			System.out.println("No, there are " + correctNumber +" laws of predition");
-        		}
-        	
-        
-        }
+        	System.out.println("No, there are " + correctNumber +" laws of predition");
+        }   	
 	}
-
 }
