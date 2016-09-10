@@ -7,14 +7,16 @@ public class A2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
+		
 		while(true){
+			
 			System.out.println("Enter an input: ");
 			String inputString = scan.nextLine();
+			
 			if(validInput(inputString) == true){
 				System.out.println("Input " +inputString+ " convert to "+ convert(inputString)+" in base 10");
 			}else{
 				System.out.println("Enter again!");
-				continue;
 			}
 			
 		}
@@ -38,5 +40,4 @@ public class A2 {
 		}
 		return true;
 	}
-
 }
