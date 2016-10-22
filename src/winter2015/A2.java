@@ -1,4 +1,4 @@
-package assignment;
+package winter2015;
 
 import java.util.Scanner;
 
