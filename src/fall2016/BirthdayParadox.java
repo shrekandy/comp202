@@ -1,22 +1,13 @@
 package fall2016;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class BirthdayParadox {
 
 	public static void main(String[] args) {
-
-		// for (int i = 0; i < 10; i++) {
-		// System.out.println(Arrays.toString(generateArray(20 + i, 20)));
-		// }
-
-		int[][] table = generateAllData(3, 5, 20);
-		System.out.println(Arrays.deepToString(table));
-
-		//System.out.println(countElement(table, 19));
-		
-		System.out.println(maxDay(table));
+		for(int i = 1; i < 101; i++){
+			System.out.println(i + " " + runExperiment(i));
+		}
 	}
 
 	public static double runExperiment(int size) throws IllegalArgumentException {
@@ -24,7 +15,7 @@ public class BirthdayParadox {
 		int range = 365;
 		int duplicatedArrays = 0;
 
-		if (size == 1) {
+		if (size < 1) {
 			throw new IllegalArgumentException();
 		}
 		int[][] dates = generateAllData(iterations, size, range);
